@@ -1,5 +1,4 @@
 import React from "react";
-// import { db } from "../firebase";
 import { db } from "../firebase.utiil";
 import { doc, deleteDoc } from "firebase/firestore";
 import { motion } from "framer-motion";
