@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import video from "../assets/video/AMAZON TRACKING PRODUCT VIDEO.mp4"
+import video from "../assets/video/AMAZON TRACKING PRODUCT VIDEO.mp4"
 function Video() {
     return (
         <motion.div

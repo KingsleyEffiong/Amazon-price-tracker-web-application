@@ -12,7 +12,7 @@ function UI() {
                 <div className="grid md:grid-cols-3 gap-4 h-full w-full">
                     <div className="bg-[#21222D]  text-white md:col-span-2 md:h-[520px] flex align-middle flex-col p-2">
                         <h2 className="text-lg font-bold text-center text-white mb-8">How to use the extension</h2>
-                        {/* <Video /> */}
+                        <Video />
                     </div>
                     <div className="bg-[#21222D] p-5 text-white md:h-[520px] overflow-auto w-full flex flex-col justify-center">
                         <ListOfProducts />
