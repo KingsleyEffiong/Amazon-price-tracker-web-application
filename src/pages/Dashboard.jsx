@@ -7,6 +7,8 @@ import { useProvider } from '../components/PostProvider';
 
 const USER_URL = import.meta.env.VITE_USER_PROFILE;
 
+
+
 function Dashboard({ username }) {
     const navigate = useNavigate();
     const { fectchUsername, dispatch } = useProvider()
