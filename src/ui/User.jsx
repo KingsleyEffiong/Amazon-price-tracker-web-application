@@ -6,11 +6,14 @@ import { IconButton } from '@mui/material';
 import { useProvider } from '../components/PostProvider';
 import { Person2Rounded } from '@mui/icons-material';
 function User() {
-    const { fectchUsername } = useProvider()
+
+    const { fectchUsername, notifications } = useProvider()
     return (
         <div className="w-[86px] h-[29px] flex gap-2.5 items-center">
             <IconButton className='relative'>
-                <div className="absolute w-[7px] h-[7px] rounded-full top-1 right-1.5 bg-red-700"></div>
+                {notifications.length > 0 && (
+                    <div className="absolute w-[7px] h-[7px] rounded-full top-1 right-1.5 bg-red-700"></div>
+                )}
                 <NotificationsIcon className='text-gray-500' />
             </IconButton>
             <Person2Rounded />

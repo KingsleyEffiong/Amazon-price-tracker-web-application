@@ -3,10 +3,12 @@ import { db } from '../firebase.utiil';
 import { doc, getDoc } from "firebase/firestore";
 import { motion, AnimatePresence } from "framer-motion";
 import { Box, LinearProgress } from '@mui/material';
+import { useProvider } from './PostProvider';
 
 function Notification() {
-    const [notifications, setNotifications] = useState([]);
     const [linearLoading, setLinearLoading] = useState(false);
+
+    const { notifications, dispatch } = useProvider()
 
     useEffect(() => {
         const fetchData = async () => {
@@ -29,6 +31,8 @@ function Notification() {
                     })) || [];
 
                     setNotifications(notifications);
+                    dispatch({ type: 'notifications', notifications: notifications })
+                    dis
                 }
             } catch (error) {
                 console.error("❌ Error fetching notifications:", error);
