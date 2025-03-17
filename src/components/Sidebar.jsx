@@ -15,6 +15,7 @@ function Sidebar() {
         setToggle((prev) => !prev);
     }
 
+
     const menuItems = [
         { path: '/', icon: <DashboardIcon />, label: 'Dashboard' },
         { path: 'notification', icon: <NotificationsIcon />, label: 'Notification' },
