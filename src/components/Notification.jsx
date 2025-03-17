@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { db } from '../firebase';
+// import { db } from '../firebase';
+import { db } from '../firebase.utiil';
 import { doc, getDoc } from "firebase/firestore";
 import { motion, AnimatePresence } from "framer-motion";
 import { Box, LinearProgress } from '@mui/material';
