@@ -5,7 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import { PostProvider } from "./components/PostProvider";
 import backgroundImage from "./assets/images/black-concrete-wall.jpg";
 import UI from "./components/UI";
-import Notification from "./components/Notification";
+// import Notification from "./components/Notification";
 import Setting from "./components/Setting";
 import PageNotFound from "./pages/PageNotFound";
 
@@ -28,7 +28,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />}>
               <Route index element={<UI />} />
               <Route path="/dashboard" element={<UI />} />
-              <Route path="notification" element={<Notification />} />
+              {/* <Route path="notification" element={<Notification />} /> */}
               <Route path="setting" element={<Setting />} />
             </Route>
           </Routes>
