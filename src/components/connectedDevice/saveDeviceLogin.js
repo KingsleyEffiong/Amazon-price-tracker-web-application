@@ -1,4 +1,4 @@
-import { db } from "../../firebase";
+import { db } from "../../firebase.utiil";
 import { doc, updateDoc, getDoc } from "firebase/firestore";
 
 const getDeviceType = () => {
