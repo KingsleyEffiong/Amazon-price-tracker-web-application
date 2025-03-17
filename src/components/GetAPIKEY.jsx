@@ -27,7 +27,7 @@ function GetAPIKEY() {
 
     return (
         <div
-            className="flex items-center space-x-2 bg-gray-200 px-4 py-2 rounded-full cursor-pointer hover:bg-gray-300 transition"
+            className="flex flex-col w-fit md:flex-row items-center space-x-2 mb-5 md:mb-0  bg-gray-200 px-4 py-2 md:rounded-full cursor-pointer hover:bg-gray-300 transition"
             onClick={copyToClipboard}
         >
             <h2 className='text-red-700'>Your Amazon traking key: </h2>

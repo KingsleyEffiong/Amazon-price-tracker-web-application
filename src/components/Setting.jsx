@@ -39,9 +39,10 @@ function Setting() {
                 >
                     <h3 className="text-2xl font-bold text-gray-700 mb-4">Account Management</h3>
                     <UserUpdate />
-                    {/* Connected Devices */}
-                    <ConnectedDevices />
-                    <GetAPIKEY />
+                    <div className="flex flex-col gap-4 w-full items-center overflow-hidden">
+                        <ConnectedDevices />
+                        <GetAPIKEY />
+                    </div>
 
 
                     {/* Logout & Delete Account */}
