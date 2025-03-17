@@ -37,7 +37,6 @@ function Login() {
             const contentType = response.headers.get("content-type");
             if (contentType && contentType.includes("application/json")) {
                 data = await response.json();
-                console.log(data);
             } else {
                 throw new Error(`Unexpected response format. Status: ${response.status}`);
             }
@@ -55,8 +54,6 @@ function Login() {
             } else {
                 throw new Error("No token received from server");
             }
-
-            console.log("Login Successful:", data);
             dispatch({ type: 'USERNAME', user: '' });
             dispatch({ type: 'EMAIL', userEmail: '' });
             dispatch({ type: 'ERRORS', errors: '' });

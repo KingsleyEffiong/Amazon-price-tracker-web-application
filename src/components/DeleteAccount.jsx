@@ -38,9 +38,6 @@ function DeleteAccount() {
         if (!confirm.isConfirmed) return;
 
         try {
-            console.log("Deleting user with ID:", userId);
-            console.log("Token being sent:", token);
-
             // Delete user from MongoDB
             const response = await fetch(`${DELETE_USER}/${userId}`, {
                 method: "DELETE",
@@ -51,7 +48,6 @@ function DeleteAccount() {
             });
 
             const data = await response.json();
-            console.log("Response:", data);
 
             if (!response.ok) throw new Error(data.message || "Failed to delete user from MongoDB");
 
