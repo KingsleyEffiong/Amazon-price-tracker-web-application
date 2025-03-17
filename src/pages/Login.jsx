@@ -64,7 +64,7 @@ function Login() {
                 confirmButtonText: 'Continue'
             }).then(result => {
                 if (result.isConfirmed) {
-                    navigate('/dashboard');
+                    navigate('/');
                 }
             });
 
