@@ -9,7 +9,7 @@ import { IconButton } from '@mui/material';
 function Sidebar() {
     const [toggle, setToggle] = useState(true);
     const navigate = useNavigate();
-    const location = useLocation(); // Get current route
+    const location = useLocation();
 
     function handleToggle() {
         setToggle((prev) => !prev);
@@ -18,8 +18,8 @@ function Sidebar() {
 
     const menuItems = [
         { path: '/', icon: <DashboardIcon />, label: 'Dashboard' },
-        { path: 'notification', icon: <NotificationsIcon />, label: 'Notification' },
-        { path: 'setting', icon: <SettingsIcon />, label: 'Setting' }
+        { path: '/notification', icon: <NotificationsIcon />, label: 'Notification' },
+        { path: '/setting', icon: <SettingsIcon />, label: 'Setting' }
     ];
 
     return (

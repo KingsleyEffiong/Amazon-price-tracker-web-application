@@ -167,9 +167,9 @@ function ListOfProducts() {
                             <h3 className="text-lg font-semibold text-white truncate">{product.title}</h3>
                             <div className="flex flex-col">
 
-                                <p className="text-sm font-semibold text-white truncate">Amazon Price: {product.priceSymbol
+                                <p className="text-sm font-semibold text-white">Amazon Price: {product.priceSymbol
                                 }{product.price}.{product.pricePercentage}</p>
-                                <p className="text-sm font-semibold text-white truncate">Your estimated budget: {product.priceSymbol
+                                <p className="text-sm font-semibold text-white">Your estimated budget: {product.priceSymbol
                                 }{product.userPrice}.00</p>
                             </div>
                         </div>

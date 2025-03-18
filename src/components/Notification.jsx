@@ -29,8 +29,6 @@ function Notification() {
                         ...noti,
                         timestamp: noti.timestamp?.seconds ? noti.timestamp.seconds * 1000 : null, // Convert Firestore timestamp
                     })) || [];
-
-                    setNotifications(notifications);
                     dispatch({ type: 'notifications', notifications: notifications })
                     dis
                 }
